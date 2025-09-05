@@ -8,7 +8,7 @@ name = Swiftgram 解锁
 desc = 解锁 Swiftgram 订阅和高级功能（Loon专用）
 author = ChatGPT 改写
 version = 1.0
-update_url = https://raw.githubusercontent.com/xxx/Rewrite/main/swiftgram.plugin
+update_url = https://raw.githubusercontent.com/LecherousMan/QuantumultX/refs/heads/main/swiftgram.plugin
 
 [Script]
 http-response ^https?:\/\/api\.swiftgram\.app\/(v\d\/user\/info|restoreAccess) script-path = https://raw.githubusercontent.com/xxx/Rewrite/main/swiftgram.js, requires-body = true, tag = Swiftgram解锁
