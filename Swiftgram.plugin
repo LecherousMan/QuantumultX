@@ -11,7 +11,7 @@ version = 1.0
 update_url = https://raw.githubusercontent.com/LecherousMan/QuantumultX/refs/heads/main/Swiftgram.plugin
 
 [Script]
-http-response ^https?:\/\/api\.swiftgram\.app\/(v\d\/user\/info|restoreAccess) script-path = https://raw.githubusercontent.com/LecherousMan/QuantumultX/refs/heads/main/swiftgram.js, requires-body = true, tag = Swiftgram解锁
+http-response ^https?:\/\/api\.swiftgram\.app\/(v\d\/user\/info|restoreAccess) script-path = https://raw.githubusercontent.com/LecherousMan/QuantumultX/refs/heads/main/Swiftgram.js, requires-body = true, tag = Swiftgram解锁
 
 [MITM]
 hostname = api.swiftgram.app
