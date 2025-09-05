@@ -1,0 +1,17 @@
+# Swiftgram 解锁插件
+# 更新时间：2025-09-05
+# 作者：改写自 chxm1023
+# 声明：仅供学习研究，禁止传播或售卖！
+
+[Plugin]
+name = Swiftgram 解锁
+desc = 解锁 Swiftgram 订阅和高级功能（Loon专用）
+author = ChatGPT 改写
+version = 1.0
+update_url = https://raw.githubusercontent.com/xxx/Rewrite/main/swiftgram.plugin
+
+[Script]
+http-response ^https?:\/\/api\.swiftgram\.app\/(v\d\/user\/info|restoreAccess) script-path = https://raw.githubusercontent.com/xxx/Rewrite/main/swiftgram.js, requires-body = true, tag = Swiftgram解锁
+
+[MITM]
+hostname = api.swiftgram.app
