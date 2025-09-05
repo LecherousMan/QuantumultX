@@ -5,17 +5,6 @@
 脚本作者：改写自 chxm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
 
-**********************************
-
-[rewrite_local]
-^https?:\/\/api\.swiftgram\.app\/(v\d\/user\/info|restoreAccess) url script-response-body https://raw.githubusercontent.com/xxx/Rewrite/main/swiftgram.js
-
-[mitm]
-hostname = api.swiftgram.app
-
-*************************************/
-
-
 // 获取当前请求的 URL
 const url = $request.url;
 
