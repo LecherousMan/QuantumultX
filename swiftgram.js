@@ -8,8 +8,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.swiftgram\.app\/(v\d\/user\/info|restoreAccess) url script-response-body https://raw.githubusercontent.com/xxx/Rewrite/main/swiftgram.js
-
+^https?:\/\/api\.swiftgram\.app\/(v\d\/user\/info|restoreAccess) url script-response-body https://raw.githubusercontent.com/LecherousMan/QuantumultX/refs/heads/main/swiftgram.js
 [mitm]
 hostname = api.swiftgram.app
 
