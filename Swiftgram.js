@@ -11,7 +11,7 @@
 [Script]
 
 # 解锁 Swiftgram 会员功能
-http-response ^https?:\/\/swiftgram\.app\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) script-path=https://github.com/ddgksf2013/MoYu/raw/master/NicegramProCrack.js, requires-body=true, tag=Nicegram解锁
+http-response ^https?:\/\/swiftgram\.app\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) script-path=https://raw.githubusercontent.com/LecherousMan/QuantumultX/refs/heads/main/Swiftgram.js, requires-body=true, tag=Nicegram解锁
 
 [MITM]
 
