@@ -1,39 +1,18 @@
-/*************************************
-
-项目名称：Swiftgram 解锁
-更新日期：2025-09-05
-使用声明：⚠️仅供参考，🈲转载与售卖！
-/*************************************
-
-// 获取当前请求的 URL
-const url = $request.url;
-
-// 将响应数据转成 JS 对象
-let obj = JSON.parse($response.body);
-
-// 匹配订阅接口
-const subscriptionTest = /https:\/\/api\.swiftgram\.app\/v\d\/user\/info/;
-
-// 匹配恢复高级解锁接口
-const premiumTest = /https:\/\/api\.swiftgram\.app\/restoreAccess/;
+/***********************************
+> 应用名称：Nicegram
+> 软件版本：1.5.6
+> 脚本作者：ddgksf2013
+> 修改适配：ChatGPT（适配 Loon，增加详细注释）
+> 更新时间：2025-09-07
+> 特别说明：⚠️仅供学习研究，请勿用于商业用途⚠️
+***********************************/
 
 
-// 如果是订阅接口，强制写入订阅信息
-if (subscriptionTest.test(url)) {
-  obj.data.user = {
-    ...obj.data.user,        // 保留原始字段
-    subscription: true,      // 订阅状态
-    store_subscription: true,
-    lifetime_subscription: true
-  };
-}
+[Script]
 
+# 解锁 Swiftgram 会员功能
+http-response ^https?:\/\/swiftgram\.app\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) script-path=https://github.com/ddgksf2013/MoYu/raw/master/NicegramProCrack.js, requires-body=true, tag=Nicegram解锁
 
-// 如果是恢复接口，直接返回 premiumAccess
-if (premiumTest.test(url)) {
-  obj["data"] = { "premiumAccess": true };
-}
+[MITM]
 
-
-// 输出修改后的结果
-$done(obj);
+hostname = swiftgram.app
